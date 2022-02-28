@@ -25,6 +25,18 @@ header p {
     transform: translate(-50%, -50%);
 }
 
+main {
+    /* width: 100%;
+    background-size: contain;
+    background-image: url('./assets/people.jpg'); */
+}
+
+.form-box {
+    /* position: ; */
+    width: 100px;
+    height: 300px;
+}
+
 @media screen and (max-width: 420px) {
     header p {
         font-size: 1.3em;
