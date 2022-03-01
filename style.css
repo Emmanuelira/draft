@@ -4,7 +4,8 @@ body {
 header {
     text-align: center;
     background-color: rgb(4, 212, 212);
-    height: 50px;
+    height: 7vh;
+    box-sizing: border-box;
     position: relative;
     padding: 10px;
 }
@@ -26,25 +27,118 @@ header p {
 }
 
 main {
-    /* width: 100%;
-    background-size: contain;
-    background-image: url('./assets/people.jpg'); */
+    height: 60vh;
+    background-size: cover;
+    background-image: url('./assets/people.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
 .form-box {
-    /* position: ; */
-    width: 100px;
-    height: 300px;
+    position: absolute;
+    right: 10px;
+    top: 10vh;
+    width: 280px;
+    height: 40vh;
+    padding: 10px;
+    border-radius: 5px;
+    /* -----------------------*/
+    background-color: rgb(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1em;
 }
 
-@media screen and (max-width: 420px) {
+input, select {
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    display: block;
+}
+
+.input-in {
+    margin-bottom: 5px;
+}
+
+.input-submit {
+    color: white;
+    background-color: rgb(0, 187, 187);
+}
+
+footer {
+    height: 33vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+.foot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    text-align: center;
+}
+
+footer span {
+    text-align: left;
+    width: 400px;
+    color: white;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+footer span p{
+    margin-bottom: 0;
+}
+
+footer img {
+    width: 140px;
+}
+
+footer img, footer span {
+    display: inline-block;
+}
+
+@media screen and (max-width: 590px) {
+    footer span {
+        width: 250px;
+        font-size: 0.9em;
+    }
+
+    footer img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 425px) {
     header p {
         font-size: 1.3em;
+    }
+    .form-box {
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 365px) {
+    footer span {
+        width: 200px;
+        font-size: 0.8em;
+    }
+
+    footer img {
+        width: 90px;
     }
 }
 
 @media screen and (max-width: 365px) {
     header p {
         font-size: 1em;
+    }
+    .form-box {
+        font-size: 0.9em;
     }
 }
